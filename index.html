@@ -1,0 +1,257 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONIDO VIVO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/funciones.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1> Sonido Vivo </h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <button type="button" class="btn-sesion">Inicia sesión</button>
+                <button type="button" class="btn-carrito">Carrito</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        
+
+       
+        <section id="contenedor-productos" class="grid-productos">
+        
+        </section>
+        <!-- ------------------- CARRUSEL 1 LO MÁS VENDIDO ------------------- -->
+        <section class="contenedor-carrusel" aria-label="Lo más vendido">
+            <header class="carrusel-header">
+                <h2>Lo más vendido </h2>
+                <a href="#" class="ver-mas">Ver más</a>
+            </header>
+
+            <div class="carrusel-body">
+                <nav class="carrusel-navigacion" aria-label="Controles lo más vendido">
+                    <button class="carrusel-btn btn-izq" id="btnAtras1">❮</button>
+                    <button class="carrusel-btn btn-der" id="btnSigue1">❯</button>
+                </nav>
+
+                <div class="carrusel-slider" id="slider1">
+                    <!-- Producto 1 -->
+                    <article class="tarjeta-producto">
+                        <figure class="img"><img src="img/imagen1.jpg" alt=""></figure>
+                        <div class="info-producto">
+                            <h3>Guitarra Acústica Dreadnought</h3>
+                            <p class="marca">Fender</p>
+                            <p class="descripcion">Tapa de abeto macizo. Sonido cálido.</p>
+                            <p class="stock">Stock: <span>5</span></p>
+                            <div class="producto-footer">
+                                <p class="precio">$189.990</p>
+                                <button class="comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Producto 2 -->
+                    <article class="tarjeta-producto">
+                        <figure class="img"><img src="" alt=""></figure>
+                        <div class="info-producto">
+                            <h3>Guitarra Acústica Clásica 4/4</h3>
+                            <p class="marca">Yamaha</p>
+                            <p class="descripcion">Nailon, ideal para estudio.</p>
+                            <p class="stock">Stock: <span>10</span></p>
+                            <div class="producto-footer">
+                                <p class="precio">$89.990</p>
+                                <button class="comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta Producto 3 -->
+                    <article class="tarjeta-producto">
+                        <figure class="img"><img src="" alt=""></figure>
+                        <div class="info-producto">
+                            <h3>Guitarra Acústica Dreadnought</h3>
+                            <p class="marca">Fender</p>
+                            <p class="descripcion">Tapa de abeto macizo, brazo de caoba. Sonido cálido y proyectado.</p>
+                            <p class="stock">Stock: <span>5</span></p>
+                            <div class="producto-footer">
+                                <p class="precio">$189.990</p>
+                                <button class="comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta Producto 4 -->
+                    <article class="tarjeta-producto">
+                        <figure class="img">
+                            <img src="" alt="">
+                        </figure>
+                        <div class="info-producto">
+                            <h3>Bajo Eléctrico Jazz Bass</h3>
+                            <p class="marca">Fender</p>
+                            <p class="descripcion">Alder body, 2 Alnico V Jazz single-coil.</p>
+                            <p class="stock">Stock: <span>2</span></p>
+                            <div class="producto-footer">
+                                <p class="precio">$699.990</p>
+                                <button class="comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <figure class="img">
+                            <img src="" alt="">
+                        </figure>
+                        <div class="info-producto">
+                            <h3>Amplificador Acústico 40W</h3>
+                            <p class="marca">Fishman - Loudbox Mini</p>
+                            <p class="descripcion">60W, 2 canales, reverb y chorus incorporados.</p>
+                            <p class="stock">Stock: <span>2</span></p>
+                            <div class="producto-footer">
+                                <p class="precio">$499.990</p>
+                                <button class="comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="tarjeta-producto">
+                        <figure class="img">
+                            <img src="" alt="">
+                        </figure>
+                        <div class="info-producto">
+                            <h3>Amplificador Acústico 40W</h3>
+                            <p class="marca">Fishman - Loudbox Mini</p>
+                            <p class="descripcion">60W, 2 canales, reverb y chorus incorporados.</p>
+                            <p class="stock">Stock: <span>2</span></p>
+                            <div class="producto-footer">
+                                <p class="precio">$499.990</p>
+                                <button class="comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------- CARRUSEL 2: LO MÁS BARATO ------------------- -->
+        <section class="contenedor-carrusel" aria-label="Lo más barato">
+            <header class="carrusel-header">
+                <h2>Lo más barato </h2>
+                <a href="#" class="ver-mas">Ver más</a>
+            </header>
+
+            <div class="carrusel-body">
+                <nav class="carrusel-navigacion" aria-label="Controles lo más barato">
+                    <button class="carrusel-btn btn-izq" id="btnAtras2">❮</button>
+                    <button class="carrusel-btn btn-der" id="btnSigue2">❯</button>
+                </nav>
+
+                <div class="carrusel-slider" id="slider2">
+                    <!-- PRODUCTO 1 -->
+                    <article class="tarjeta-producto">
+                        <figure class="img">
+                            <img src="" alt="Pop Filter para Micrófono Sennheiser MZP 40">
+                        </figure>
+                        <div class="info-producto">
+                            <h3>Pop Filter para Micrófono</h3>
+                            <p class="marca">Sennheiser - MZP 40</p>
+                            <p class="descripcion">Doble malla, brazo flexible con clip.</p>
+                            <p class="stock">Stock: <span>8</span></p>
+                            <div class="producto-footer">
+                                <p class="precio">$14.990</p>
+                                <button class="comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PRODUCTO 2 -->
+                    <article class="tarjeta-producto">
+                        <figure class="img">
+                            <img src="" alt="Guitarra 3/4 Niños Yamaha JR1">
+                        </figure>
+                        <div class="info-producto">
+                            <h3>Guitarra 3/4 Niños</h3>
+                            <p class="marca">Yamaha - JR1</p>
+                            <p class="descripcion">Tamaño reducido para niños de 6 a 10 años.</p>
+                            <p class="stock">Stock: <span>6</span></p>
+                            <div class="producto-footer">
+                                <p class="precio">$79.990</p>
+                                <button class="comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PRODUCTO 3 -->
+                    <article class="tarjeta-producto">
+                        <figure class="img">
+                            <img src="" alt="Pedal Distorsión Boss DS-1">
+                        </figure>
+                        <div class="info-producto">
+                            <h3>Pedal Distorsión</h3>
+                            <p class="marca">Boss - DS-1</p>
+                            <p class="descripcion">Clásico pedal de distorsión, 3 controles.</p>
+                            <p class="stock">Stock: <span>7</span></p>
+                            <div class="producto-footer">
+                                <p class="precio">$79.990</p>
+                                <button class="comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PRODUCTO 4 -->
+                    <article class="tarjeta-producto">
+                        <figure class="img">
+                            <img src="" alt="Auriculares de Estudio Audio-Tech. ATH-M20x">
+                        </figure>
+                        <div class="info-producto">
+                            <h3>Auriculares de Estudio</h3>
+                            <p class="marca">Audio-Tech. - ATH-M20x</p>
+                            <p class="descripcion">Circumaurales, respuesta 15Hz-20kHz.</p>
+                            <p class="stock">Stock: <span>6</span></p>
+                            <div class="producto-footer">
+                                <p class="precio">$79.990</p>
+                                <button class="comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PRODUCTO 5 -->
+                    <article class="tarjeta-producto">
+                        <figure class="img">
+                            <img src="" alt="Guitarra Acústica Clásica 4/4 Yamaha C40">
+                        </figure>
+                        <div class="info-producto">
+                            <h3>Guitarra Acústica Clásica 4/4</h3>
+                            <p class="marca">Yamaha - C40</p>
+                            <p class="descripcion">Nailon, tapa de abeto. Ideal para estudio y flamenco.</p>
+                            <p class="stock">Stock: <span>10</span></p>
+                            <div class="producto-footer">
+                                <p class="precio">$89.990</p>
+                                <button class="comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+    </main>
+
+</body>
+
+</html>
