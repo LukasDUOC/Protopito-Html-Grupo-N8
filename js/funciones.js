@@ -192,3 +192,42 @@ function inicializarFiltro() {
 renderizarProductos(productos);
 inicializarFiltro();
 
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Escuchamos los clics en todo el documento (delegación de eventos)
+    document.addEventListener('click', (e) => {
+        
+        // Verificamos si el elemento clickeado es un botón de comprar
+        if (e.target.classList.contains('comprar')) {
+            
+            // Buscamos la tarjeta contenedora del producto (.tarjeta-producto)
+            const tarjeta = e.target.closest('.tarjeta-producto');
+            
+            if (tarjeta) {
+                // Seleccionamos el <span> dentro del <p class="stock">
+                const stockElemento = tarjeta.querySelector('.stock span');
+                
+                if (stockElemento) {
+                    // Convertimos el texto actual a número
+                    let stockActual = parseInt(stockElemento.textContent, 10);
+                    
+                    // Si hay stock disponible, restamos 1
+                    if (stockActual > 0) {
+                        stockActual--;
+                        stockElemento.textContent = stockActual;
+                        
+                        // Opcional: si el stock llega a 0, deshabilitamos el botón
+                        if (stockActual === 0) {
+                            e.target.disabled = true;
+                            e.target.textContent = 'Agotado';
+                        }
+                    } else {
+                        alert('¡Producto agotado!');
+                    }
+                }
+            }
+        }
+    });
+
+});
+
