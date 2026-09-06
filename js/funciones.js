@@ -1,7 +1,4 @@
 
-
-
-
 // --- CARRUSEL 1: Lo más vendido ---
 const slider1 = document.getElementById('slider1');
 const btnAtras1 = document.getElementById('btnAtras1');
@@ -29,41 +26,41 @@ btnAtras2.addEventListener('click', () => {
 
 // 1. Muestra representativa 
 const productos = [ 
-    // --- GUITARRAS ACÚSTICAS --- // 
+    
 
-    { id: "GA001", stock: 8, nombre: "Guitarra Acústica Folk", categoria: "Guitarras Acústicas", marca: "Yamaha", precio: 129990, imagen: "img/producto.jpg" },
+    { id: "GA001", stock: 8, nombre: "Guitarra Acústica Folk", categoria: "Guitarras Acústicas", marca: "Yamaha", precio: "$129.990", imagen: "img/imagen1.jpg" },
 
-    // --- GUITARRAS ELÉCTRICAS ---
-    { id: "GE001", stock: 5, nombre: "Guitarra Eléctrica Stratocaster", categoria: "Guitarras Eléctricas", marca: "Squier", precio: 249990, imagen: "img/producto.jpg" },
+    // --- GUITARRAS ELECTRICAS ---
+    { id: "GE001", stock: 5, nombre: "Guitarra Eléctrica Stratocaster", categoria: "Guitarras Eléctricas", marca: "Squier", precio: "$249.990", imagen: "img/imagen2.jpg" },
    
-    // --- BAJOS ELÉCTRICOS ---
-    { id: "BA001", stock: 5, nombre: "Bajo Eléctrico 4 Cuerdas", categoria: "Bajos Eléctricos", marca: "Squier", precio: 299990, imagen: "img/producto.jpg" },
+    // --- BAJOS ELECTRICOS ---
+    { id: "BA001", stock: 5, nombre: "Bajo Eléctrico 4 Cuerdas", categoria: "Bajos Eléctricos", marca: "Squier", precio: "$299.990", imagen: "img/imagen3.jpg" },
 
-    // --- BATERÍAS ---
-    { id: "BT001", stock: 2, nombre: "Batería Acústica 5 piezas", categoria: "Baterías", marca: "Pearl", precio: 599990, imagen: "img/producto.jpg" },
+    // --- BATERiAS ---
+    { id: "BT001", stock: 2, nombre: "Batería Acústica 5 piezas", categoria: "Baterías", marca: "Pearl", precio: "$599.990", imagen: "img/imagen4.jpg" },
    
     // --- TECLADOS Y PIANOS ---
-    { id: "TC001", stock: 4, nombre: "Teclado Digital 61 teclas", categoria: "Teclados y Pianos", marca: "Yamaha", precio: 249990, imagen: "img/producto.jpg" },
+    { id: "TC001", stock: 4, nombre: "Teclado Digital 61 teclas", categoria: "Teclados y Pianos", marca: "Yamaha", precio: "$249.990", imagen: "img/imagen5.jpg" },
     
     // --- AMPLIFICADORES ---
-    { id: "AM001", stock: 5, nombre: "Amplificador Guitarra 15W", categoria: "Amplificadores", marca: "Fender", precio: 99990, imagen: "img/producto.jpg" },
+    { id: "AM001", stock: 5, nombre: "Amplificador Guitarra 15W", categoria: "Amplificadores", marca: "Fender", precio: "$99.990", imagen: "img/imagen6.jpg" },
    
-    // --- MICRÓFONOS ---
-    { id: "MI001", stock: 8, nombre: "Micrófono Dinámico Cardioide", categoria: "Micrófonos", marca: "Shure", precio: 149990, imagen: "img/producto.jpg" },
+    // --- MICROFONOS ---
+    { id: "MI001", stock: 8, nombre: "Micrófono Dinámico Cardioide", categoria: "Micrófonos", marca: "Shure", precio: "$149.990", imagen: "img/imagen7.jpg" },
 
     // --- PEDALES DE EFECTOS ---
-    { id: "PE001", stock: 7, nombre: "Pedal Distorsión", categoria: "Pedales de Efectos", marca: "Boss", precio: 79990, imagen: "img/producto.jpg" },
+    { id: "PE001", stock: 7, nombre: "Pedal Distorsión", categoria: "Pedales de Efectos", marca: "Boss", precio: "$79.990", imagen: "img/imagen8.jpg" },
     
     // --- ACCESORIOS ---
-    { id: "AC001", stock: 25, nombre: "Cuerdas Guitarra Eléctrica 09-42", categoria: "Accesorios", marca: "Ernie Ball", precio: 8990, imagen: "img/producto.jpg" },
+    { id: "AC001", stock: 25, nombre: "Cuerdas Guitarra Eléctrica 09-42", categoria: "Accesorios", marca: "Ernie Ball", precio: "$8.990", imagen: "img/imagen9.webp" },
 
     // --- ESTUDIO Y GRABACIÓN ---
-    { id: "ES001", stock: 4, nombre: "Interfaz de Audio 2x2 USB", categoria: "Estudio y Grabación", marca: "Focusrite", precio: 149990, imagen: "img/producto.jpg" },
+    { id: "ES001", stock: 4, nombre: "Interfaz de Audio 2x2 USB", categoria: "Estudio y Grabación", marca: "Focusrite", precio: "$149.990", imagen: "img/imagen10.webp" },
    
    
 ];
 
-// Función para pintar los productos en el HTML
+
 function renderizarProductos(listaProductos) {
     const contenedor = document.getElementById('contenedor-productos');
     contenedor.innerHTML = ''; 
@@ -73,16 +70,11 @@ function renderizarProductos(listaProductos) {
         return;
     }
 
-    // Recorre la lista y crea el HTML de cada tarjeta
+   
     listaProductos.forEach(producto => {
         const divProducto = document.createElement('div');
         divProducto.classList.add('producto');
 
-       
-        const precioFormateado = new Intl.NumberFormat('es-CL', {
-            style: 'currency',
-            currency: 'CLP'
-        }).format(producto.precio);
 
         divProducto.innerHTML = `
             <article class="tarjeta-producto">
@@ -94,7 +86,7 @@ function renderizarProductos(listaProductos) {
             <p class="marca">${producto.marca}</p>
             <p class="stock">Stock: <span>${producto.stock}</span></p>
               <div class="producto-footer">
-                <p class="precio">${precioFormateado}</p>
+                <p class="precio">${producto.precio}</p>
                 <button class="comprar">Comprar</button>
               </div>
             </div>
@@ -130,3 +122,4 @@ function inicializarFiltro() {
 // 4. Ejecutar al cargar la página
 renderizarProductos(productos);
 inicializarFiltro();
+
