@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href=#contactos>Contacto</a></li>
                 <button type="button" class="btn-sesion">Inicia sesión</button>
                 <button type="button" class="btn-carrito">Carrito</button>
             </ul>
@@ -30,7 +30,7 @@
 
 
         <!-- ------------------- CARRUSEL 1 LO MÁS VENDIDO ------------------- -->
-        <section class="contenedor-carrusel" aria-label="Lo más vendido">
+        <section class="contenedor-carrusel" aria-label="Lo más vendido" id="inicio">
             <header class="carrusel-header">
                 <h2>Lo más vendido </h2>
                 <a href="#" class="ver-mas">Ver más</a>
@@ -47,12 +47,12 @@
                     <article class="tarjeta-producto">
                         <figure class="img"><img src="img/imagen1.jpg" alt=""></figure>
                         <div class="info-producto">
-                            <h3>Guitarra Acústica Dreadnought</h3>
-                            <p class="marca">Fender</p>
+                            <h3>Guitarra Acústica Folk</h3>
+                            <p class="marca">Yamaha</p>
                             <p class="descripcion">Tapa de abeto macizo. Sonido cálido.</p>
-                            <p class="stock">Stock: <span>5</span></p>
+                            <p class="stock">Stock: <span>8</span></p>
                             <div class="producto-footer">
-                                <p class="precio">$189.990</p>
+                                <p class="precio">$129.990</p>
                                 <button class="comprar">Comprar</button>
                             </div>
                         </div>
@@ -241,46 +241,51 @@
                 </div>
             </div>
         </section>
-        
-    <section class="filtros">
-    <div class="catalogo-layout">
-    
-    <!-- COLUMNA IZQUIERDA: Menú de categorías -->
-    <aside class="sidebar-categorias">
-        <h3>Categorías</h3>
-        <ul id="lista-categorias">
-            <li><button class="btn-filtro activo" data-categoria="Todas">Todos</button></li>
-            <li><button class="btn-filtro" data-categoria="Guitarras Acústicas">Guitarras Acústicas</button></li>
-            <li><button class="btn-filtro" data-categoria="Guitarras Eléctricas">Guitarras Eléctricas</button></li>
-            <li><button class="btn-filtro" data-categoria="Bajos Eléctricos">Bajos Eléctricos</button></li>
-            <li><button class="btn-filtro" data-categoria="Baterías">Baterías</button></li>
-            <li><button class="btn-filtro" data-categoria="Teclados y Pianos">Teclados y Pianos</button></li>
-            <li><button class="btn-filtro" data-categoria="Amplificadores">Amplificadores</button></li>
-            <li><button class="btn-filtro" data-categoria="Micrófonos">Micrófonos</button></li>
-            <li><button class="btn-filtro" data-categoria="Pedales de Efectos">Pedales de Efectos</button></li>
-            <li><button class="btn-filtro" data-categoria="Accesorios">Accesorios</button></li>
-            <li><button class="btn-filtro" data-categoria="Estudio y Grabación">Estudio y Grabación</button></li>
-        </ul>
-    </aside>
 
-    <!-- COLUMNA DERECHA: Tus productos -->
-    <section id="contenedor-productos" class="grid-productos">
-    
-    </section>
-    
-    </div>
-    </section>
+        <section class="filtros" id="productos">
+            <div class="catalogo-layout">
+
+                <aside class="sidebar-categorias">
+                    <h3>Categorías</h3>
+                    <ul id="lista-categorias">
+                        <li><button class="btn-filtro activo" data-categoria="Todas">Todos</button></li>
+                        <li><button class="btn-filtro" data-categoria="Guitarras Acústicas">Guitarras Acústicas</button>
+                        </li>
+                        <li><button class="btn-filtro" data-categoria="Guitarras Eléctricas">Guitarras
+                                Eléctricas</button></li>
+                        <li><button class="btn-filtro" data-categoria="Bajos Eléctricos">Bajos Eléctricos</button></li>
+                        <li><button class="btn-filtro" data-categoria="Baterías">Baterías</button></li>
+                        <li><button class="btn-filtro" data-categoria="Teclados y Pianos">Teclados y Pianos</button>
+                        </li>
+                        <li><button class="btn-filtro" data-categoria="Amplificadores">Amplificadores</button></li>
+                        <li><button class="btn-filtro" data-categoria="Micrófonos">Micrófonos</button></li>
+                        <li><button class="btn-filtro" data-categoria="Pedales de Efectos">Pedales de Efectos</button>
+                        </li>
+                        <li><button class="btn-filtro" data-categoria="Accesorios">Accesorios</button></li>
+                        <li><button class="btn-filtro" data-categoria="Estudio y Grabación">Estudio y Grabación</button>
+                        </li>
+                    </ul>
+                </aside>
+
+
+                <section id="contenedor-productos" class="grid-productos">
+
+                </section>
+
+            </div>
+        </section>
 
 
 
     </main>
 
-    <footer class="pie-pagina">
+    <footer class="pie-pagina" id="contactos">
         <div class="contenedor-pie">
+            <p>© 2026 Sonido Vivo</p>
             <div class="columna-menu">
                 <h4>CONTACTO</h4>
                 <ul>
-                    <li><a href="#">Formulario web</a></li>
+                    <li><a href="formulario.html">Formulario web</a></li>
                 </ul>
             </div>
             <div class="columna-menu">
@@ -289,6 +294,16 @@
                     <li><a href="#">Términos y condiciones</a></li>
                     <li><a href="#">Preguntas frecuentes</a></li>
                     <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Gestionar cookies</a></li>
+                </ul>
+            </div>
+            <div class="columna-menu">
+                <h4>REDES SOCIALES</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    
                 </ul>
             </div>
         </div>
