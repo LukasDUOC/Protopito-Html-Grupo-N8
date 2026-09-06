@@ -1,3 +1,72 @@
+//formulario
+const formulario = document.querySelector('#form-contacto');
+const mensajeConfirmacion = document.querySelector('#mensaje-confirmacion');
+const patronCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+formulario.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const nombre = document.querySelector('#nombre');
+  const correo = document.querySelector('#correo');
+  const motivo = document.querySelector('#motivo');
+  const mensaje = document.querySelector('#mensaje');
+
+  // Limpiar mensajes y estilos de error previos
+  nombre.setCustomValidity("");
+  correo.setCustomValidity("");
+  motivo.setCustomValidity("");
+  mensaje.setCustomValidity("");
+  
+  nombre.classList.remove('campo-error');
+  correo.classList.remove('campo-error');
+  motivo.classList.remove('campo-error');
+  mensaje.classList.remove('campo-error');
+
+  // 1. Validación de Nombre
+  if (nombre.value.trim() === '') {
+    nombre.classList.add('campo-error');
+    nombre.setCustomValidity("Por favor, rellene el campo faltante: Nombre completo.");
+    formulario.reportValidity(); // Abre la burbuja sobre el campo nombre
+    return;
+  }
+
+  // 2. Validación de Correo
+  if (correo.value.trim() === '') {
+    correo.classList.add('campo-error');
+    correo.setCustomValidity("Por favor, rellene el campo faltante: Correo electrónico.");
+    formulario.reportValidity(); // Abre la burbuja
+    return;
+  }
+
+  if (!patronCorreo.test(correo.value.trim())) {
+    correo.classList.add('campo-error');
+    correo.setCustomValidity("No es un correo válido.");
+    formulario.reportValidity(); // Abre la burbuja
+    return;
+  }
+
+  // 3. Validación de Motivo (Select)
+  if (motivo.value.trim() === '') {
+    motivo.classList.add('campo-error');
+    motivo.setCustomValidity("Por favor, elija un motivo de consulta.");
+    formulario.reportValidity(); // Abre la burbuja
+    return;
+  }
+
+  // 4. Validación de Mensaje (Textarea)
+  if (mensaje.value.trim() === '') {
+    mensaje.classList.add('campo-error');
+    mensaje.setCustomValidity("Por favor, rellene el campo faltante: Mensaje.");
+    formulario.reportValidity(); // Abre la burbuja
+    return;
+  }
+
+  // Si todo es válido y pasa los filtros anteriores:
+  mensajeConfirmacion.textContent = '¡Gracias! Recibimos tu consulta.';
+  mensajeConfirmacion.style.color = "var(--verde-principal)";
+  formulario.reset();
+});
+
 
 // --- CARRUSEL 1: Lo más vendido ---
 const slider1 = document.getElementById('slider1');
