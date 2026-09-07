@@ -23,7 +23,7 @@ prototipo-sonido-vivo/
 
 | Tecnología | Versión | Para qué se usa |
 | --- | --- | --- |
-| **HTML ** | 5 | Para la estructura semántica. |
+| **HTML**  | 5 | Para la estructura semántica. |
 | **CSS** | 3 | Para el diseño visual y diseño responsivo. |
 | **JavaScript** | JDK 26 | Para la lógica de filtrado, manipulación del DOM, carruseles y validación de formularios. |
 
@@ -64,7 +64,7 @@ git clone https://github.com
 
 ### Paso 4: Levantar el proyecto
 Una vez instalada la extensión, tienes dos formas de ejecutar el prototipo:
-* **Opción A:** En la esquina inferior derecha de la pantalla de VS Code, haz clic en el botón que dice **Go Live**.
+*  En la esquina inferior derecha de la pantalla de VS Code, haz clic en el botón que dice **Go Live**.
 
 Se abrirá automáticamente una pestaña en tu navegador web predeterminado.
 
