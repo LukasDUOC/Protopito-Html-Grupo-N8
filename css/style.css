@@ -360,3 +360,57 @@ nav a:hover {
 }
 
 
+/* LAYOUT PRINCIPAL Y CATÁLOGO (SIDEBAR + GRILLA) */
+
+.catalogo-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.sidebar-categorias {
+  background-color: #222229;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.sidebar-categorias h3 {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #334;
+}
+
+.sidebar-categorias ul {
+  list-style: none;
+}
+
+.btn-filtro {
+  background: none;
+  border: none;
+  color: #a0aabf;
+  width: 100%;
+  text-align: left;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: var(--transition);
+  margin-bottom: 5px;
+}
+
+.btn-filtro:hover {
+  background-color: #2b3648;
+  color: white;
+}
+
+.btn-filtro.activo {
+  background-color: #3b4b66;
+  color: white;
+  font-weight: bold;
+}
+
