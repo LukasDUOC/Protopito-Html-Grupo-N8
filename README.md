@@ -28,7 +28,7 @@ prototipo-sonido-vivo/
 | **JavaScript** | JDK 26 | Para la lógica de filtrado, manipulación del DOM, carruseles y validación de formularios. |
 
 
-## 3. ##  Características y Funcionalidades
+## 3. Características y Funcionalidades
 
 1. **Navegación e Interconexión:** El sitio web debe contar con un menú de navegación que permita desplazarse de manera coherente y fluida entre las distintas vistas y secciones (Inicio, Productos, Contacto) mediante hipervínculos funcionales.
 
